@@ -1,0 +1,7 @@
+{
+  "name": "generated-frontend",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}
