@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEGEND HAS IT - Prospective Release Partners</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero card">
+      <div class="eyebrow">Full Circle Generated App</div>
+      <div class="hero-row">
+        <div>
+          <h1>LEGEND HAS IT - Prospective Release Partners</h1>
+          <p class="lede">A real generated-app starter with backend connectivity, relational storage, validation, and release metadata.</p>
+        </div>
+        <div class="health">
+          <div class="health-label">Runtime</div>
+          <div id="runtime-status" class="health-value">Checking…</div>
+          <div id="runtime-meta" class="health-meta">Waiting for backend verification.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="card composer">
+        <div class="section-head">
+          <h2>App items</h2>
+          <p>Create, update, and persist records through the generated backend.</p>
+        </div>
+        <form id="item-form" class="form">
+          <label>
+            <span>Title</span>
+            <input id="title-input" name="title" maxlength="120" required placeholder="Ship release dashboard" />
+          </label>
+          <label>
+            <span>Details</span>
+            <textarea id="details-input" name="details" rows="4" maxlength="2000" placeholder="Describe the user-facing outcome."></textarea>
+          </label>
+          <button type="submit" class="primary">Create item</button>
+        </form>
+      </section>
+
+      <section class="card feed">
+        <div class="section-head">
+          <h2>Saved items</h2>
+          <p>These rows are stored in Postgres through Prisma.</p>
+        </div>
+        <div id="items" class="items"></div>
+      </section>
+    </section>
+  </main>
+  <script src="./runtime-config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
