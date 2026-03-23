@@ -1,0 +1,13 @@
+{
+  "name": "generated-backend",
+  "private": true,
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "prisma": "^6.8.2"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate:deploy": "prisma migrate deploy",
+    "db:generate": "prisma generate"
+  }
+}
